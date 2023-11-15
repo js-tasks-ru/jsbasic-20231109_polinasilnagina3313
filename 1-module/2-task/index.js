@@ -1,16 +1,15 @@
-/**
- * Эту функцию трогать не нужно
- */
+
 function print(text) {
   console.log(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
+
 function isValid(name) {
-  // ваш код...
+  name = name.trim();
+
+  if (name.lenght >= 4) {
+    return true;
+  }
 }
 
 function sayHello() {
