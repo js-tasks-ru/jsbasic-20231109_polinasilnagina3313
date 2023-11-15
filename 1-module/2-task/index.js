@@ -5,11 +5,21 @@ function print(text) {
 
 
 function isValid(name) {
+  if (!name) {
+    return false;
+  }
+
   name = name.trim();
 
-  if (name.lenght >= 4) {
-    return true;
+  if (name.length < 4) {
+    return false;
   }
+
+  if (name.indexOf(' ') > -1) {
+    return false;
+  }
+  
+  return true;
 }
 
 function sayHello() {
